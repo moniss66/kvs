@@ -31,7 +31,7 @@ const Login = () => {
             const body = { email, password };
             validation(e);
             console.log(body);
-            const res = await fetch("http://localhost:8080/login", {
+            const res = await fetch("https://kvsserver.onrender.com/login", {
                 method: "POST",
                 headers: { "content-Type": "application/json" },
                 body: JSON.stringify(body)

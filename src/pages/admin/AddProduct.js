@@ -17,7 +17,7 @@ const AddProduct = () => {
     try {
       const body = { image, pid, name, description, price,stocks};
       console.log(body);
-      const res = await fetch("http://localhost:8080/addproducts", {
+      const res = await fetch("https://kvsserver.onrender.com/addproducts", {
         method: "POST",
         headers: { "content-Type": "application/json" },
         body: JSON.stringify(body),

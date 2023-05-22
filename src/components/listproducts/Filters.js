@@ -11,7 +11,7 @@ const Filters = () => {
   const onListProducts = async () => {
    
     try {
-      const response = await fetch("http://localhost:8080/listproducts");
+      const response = await fetch("https://kvsserver.onrender.com/listproducts");
       console.log(response);
       if (response) {
         const res = await response.json();
